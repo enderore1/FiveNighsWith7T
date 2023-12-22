@@ -106,7 +106,59 @@ txLine(x + (160 - 100) * sizeX, y + (480 - 600) * sizeY, x + (170 - 100) * sizeX
 txLine(x + (150 - 100) * sizeX, y + (600 - 600) * sizeY, x + (150 - 100) * sizeX, y + (610 - 600) * sizeY);
 }
 
+//! @brief  ‘ÓÌ
+//!
+//! @code
+//!   Background();
+//! @endcode
+void Background()
+{
+    txSetFillColour(TX_BLACK);
+    txLine(500, 1000, 600, 950);
+    txLine(600, 950, 1150, 950);
+    txLine(850, 950, 1150, 950);
+    txLine(1150, 950, 1000, 1000);
+    txLine(1000, 1000, 500, 1000);
+    txLine(500, 1000, 500, 1050);//
+    txLine(1000, 1000, 1000, 1050);
+    txLine(1150, 950, 1150, 1050);
 
+    txSetFillColour(TX_BLACK);
+    txRectangle (500, 700, 1200, 300);
+
+    txSetFillColour(TX_BLACK);
+    txCircle(850, 200, 50);
+    txTextOut(825, 180, "¡–«Œ¬»◊");
+    txTextOut(815, 195, "Œ—“¿ÕŒ¬»—‹");
+
+    txLine(840, 1, 840, 15);
+    txLine(840, 15, 800, 30);
+    txLine(800, 30, 880, 30);
+    txLine(880, 30, 840, 15);
+    txLine(820, 35, 860, 35);
+
+    txLine(820, 45, 800, 65);
+    txLine(840, 45, 840, 65);
+    txLine(860, 45, 880, 65);
+
+    txRectangle(1350, 300, 1680, 700);
+    txLine(1550, 300, 1550, 700);
+
+    txRectangle(350, 300, 1, 700);
+    txLine(100, 300, 100, 700);
+
+    txLine(1350, 433, 1650, 433);
+    txLine(1350, 566, 1650, 566);
+
+    txLine(350, 433, 1, 433);
+    txLine(350, 566, 1, 566);
+
+    txSetFillColour(TX_BLACK);
+    txSetColor(TX_BLACK);
+    txRectangle(500, 702, 1200, 699);
+    txSetColor(TX_WHITE);
+    txSetFillColour(TX_BLACK);
+}
 
 
 #endif // FNW7_LIB_H_INCLUDED
