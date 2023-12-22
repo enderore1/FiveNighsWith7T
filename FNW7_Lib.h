@@ -76,4 +76,37 @@ void drawChelPosleSmerti(int x, int y, COLORREF color, double sizeX, double size
   txCircle(x + (150 - 150) * sizeX, y + (150 - 150) * sizeY, 20);
 }
 
+//! @brief  Костя
+//!
+//! @param   x       X - координата Кости
+//! @param   y       Y - координата Кости
+//! @param   sizeX       sizeX - размер Кости по координатам X
+//! @param   sizeY       sizeY - размер Кости по координатам Y
+//! @code
+//!   drawKostyaLoh(500, 500, 1, 1);  // Рисует Костю
+//! @endcode
+void drawKostyaLoh(int x, int y, double sizeX, double sizeY)
+{
+    //100, 600
+txLine(x + (100 - 100) * sizeX, y + (600 - 600) * sizeY, x + (100 - 100) * sizeX, y + (700 - 600) * sizeY);
+txLine(x + (200 - 100) * sizeX, y + (600 - 600) * sizeY, x + (200 - 100) * sizeX, y + (700 - 600) * sizeY);
+txLine(x + (100 - 100) * sizeX, y + (600 - 600) * sizeY, x + (200 - 100) * sizeX, y + (600 - 600) * sizeY);
+txLine(x + (100 - 100) * sizeX, y + (600 - 600) * sizeY, x + (100 - 100) * sizeX, y + (500 - 600) * sizeY);
+txLine(x + (200 - 100) * sizeX, y + (600 - 600) * sizeY, x + (200 - 100) * sizeX, y + (500 - 600) * sizeY);
+txArc(x + (100 - 100) * sizeX, y + (400 - 600) * sizeY, x + (200 - 100) * sizeX, y + (500 - 600) * sizeY, 45, 360);
+txLine(x + (100 - 100) * sizeX, y + (500 - 600) * sizeY, x + (130 - 100) * sizeX, y + (495 - 600) * sizeY);
+txLine(x + (200 - 100) * sizeX, y + (500 - 600) * sizeY, x + (170 - 100) * sizeX, y + (495 - 600) * sizeY);
+txLine(x + (100 - 100) * sizeX, y + (510 - 600) * sizeY, x + (70 - 100) * sizeX, y + (600 - 600) * sizeY);
+txLine(x + (200 - 100) * sizeX, y + (510 - 600) * sizeY, x + (230 - 100) * sizeX, y + (600 - 600) * sizeY);
+txCircle(x + (125 - 100) * sizeX, y + (445 - 600) * sizeY, 15);
+txCircle(x + (175 - 100) * sizeX, y + (445 - 600) * sizeY, 15);
+txLine(x + (130 - 100) * sizeX, y + (485 - 600) * sizeY, x + (140 - 100) * sizeX, y + (480 - 600) * sizeY);
+txLine(x + (140 - 100) * sizeX, y + (480 - 600) * sizeY, x + (160 - 100) * sizeX, y + (480 - 600) * sizeY);
+txLine(x + (160 - 100) * sizeX, y + (480 - 600) * sizeY, x + (170 - 100) * sizeX, y + (485 - 600) * sizeY);
+txLine(x + (150 - 100) * sizeX, y + (600 - 600) * sizeY, x + (150 - 100) * sizeX, y + (610 - 600) * sizeY);
+}
+
+
+
+
 #endif // FNW7_LIB_H_INCLUDED
